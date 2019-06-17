@@ -1,0 +1,105 @@
+.section-about{
+    background-color: $color-white;
+    padding: 12rem 0;
+}
+
+.section-reviews {
+    padding: 10rem 0 14rem 0; 
+    background: url(../img/Banner2.jpg)
+        top center
+        no-repeat;
+    background-size: cover;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+}
+
+.section-purchase {
+    background-color: $color-white;
+    padding: 12rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0 10rem 0;
+    }
+
+    .purchase-link{
+        //color: green;
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+} 
+
+.section-stories {
+    display: none;
+    position: relative;
+    padding:15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+}
+
+.section-contact {
+    padding: 15rem 0;
+    background: url(../img/Banner3.jpg) no-repeat;
+    background-size: cover;
+
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+}
+
+.book {
+    background-image: linear-gradient(90deg, 
+                        rgba($color-dark-red, .9) 0%, 
+                        rgba($color-dark-red, .9) 50%,
+                       transparent 50%),
+                         url("../img/Brewster2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-radius-small;
+    box-shadow: $box-shadow-heavy;
+
+    @include respond(tab-land){
+        background-image: linear-gradient(90deg, 
+        rgba($color-dark-red, .9) 0%, 
+        rgba($color-dark-red, .9) 65%,
+       transparent 65%),
+         url("../img/Brewster2.jpg");
+         background-size: cover;
+    }
+
+
+    @include respond(tab-port){
+        background-image: linear-gradient(to right,
+        rgba($color-dark-red, .9) 0%, 
+        rgba($color-dark-red, .9) 100%),
+         url("../img/Brewster2.jpg");
+
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land){
+            width: 65%;
+        }
+        
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+}

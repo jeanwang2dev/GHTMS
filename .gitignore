@@ -1,0 +1,16 @@
+#image files
+img/
+
+#node modules folder
+node_modules/
+
+#Temp folder
+Temp/
+
+#vscode sftp folder
+.vscode/
+
+#environment variable file
+php/env.php
+php/env.*.*
+

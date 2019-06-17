@@ -1,0 +1,21 @@
+{
+  "name": "ghtms",
+  "version": "1.0.0",
+  "description": "Website For The Book \"Going Home To My Soul\"",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass --source-map sass/maps/style.css.map sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "develop": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Jean (Yijing) Wang",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jeanwang2dev/GHTMS"
+  }
+}
